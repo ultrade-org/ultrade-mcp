@@ -1,6 +1,6 @@
 # Ultrade MCP Server
 
-A standalone MCP server implementation for Ultrade tools.
+A standalone MCP server implementation for Ultrade tools. This server provides a set of tools to interact with the Ultrade API, allowing users to manage wallets, markets, and system information.
 
 ## System Status
 - Version: 2.0.54
@@ -110,3 +110,9 @@ npm run dev
 Run tests:
 ```bash
 npm test
+```
+## License
+MIT License
+
+Built with ❤️ by @GoPlausible (@emg110).
+
