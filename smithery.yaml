@@ -1,0 +1,35 @@
+# Smithery configuration file: https://smithery.ai/docs/config#smitheryyaml
+
+build:
+  dockerBuildPath: ../..
+startCommand:
+  type: stdio
+  configSchema:
+    # JSON Schema defining the configuration options for the MCP.
+    type: object
+    properties:
+      
+      ITEMS_PER_PAGE:
+        type: string
+        default: 10
+        description: Number of items per page for paginated responses
+      ULTRADE_API_URL:
+        type: string
+        default: https://api.testnet.ultrade.org
+        description: Ultrade API base URL
+      
+  exampleConfig:
+    
+    ITEMS_PER_PAGE: 10
+    ULTRADE_API_URL: https://api.testnet.ultrade.org
+    
+  commandFunction:
+    |-
+    (config) => ({
+      command: 'node',
+      args: ['dist/index.js'],
+      env: {
+        ITEMS_PER_PAGE: config.ITEMS_PER_PAGE,
+        ULTRADE_API_URL: config.ULTRADE_API_URL
+      }
+    })
