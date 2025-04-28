@@ -106,12 +106,7 @@ To run in development mode with hot reloading:
 npm run dev
 ```
 
-## Testing
 
-Run tests:
-```bash
-npm test
-```
 ## License
 MIT License
 
