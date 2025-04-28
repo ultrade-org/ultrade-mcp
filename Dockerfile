@@ -4,6 +4,7 @@ WORKDIR /app
 
 # Copy package files first
 COPY package*.json ./
+COPY packages/server/package*.json ./packages/server/
 COPY tsconfig.json ./
 
 # Install dependencies at root level first
