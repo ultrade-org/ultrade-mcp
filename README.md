@@ -97,7 +97,7 @@ For example on MACOS and Claud, the path would be something like this:
     "ultrade-mcp": {
       "command": "node",
       "args": [
-        " /Users/YOUR_USERNAME/Library/Application\ Support/Claude/mcp-servers/ultrade-mcp/packages/server/dist/index.js"
+        " /Users/YOUR_USERNAME/Library/Application\ Support/Claude/mcp-servers/ultrade-mcp/dist/index.js"
      ]
     }
   }
