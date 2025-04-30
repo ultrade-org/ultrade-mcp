@@ -1,7 +1,7 @@
 # Smithery configuration file: https://smithery.ai/docs/config#smitheryyaml
 
 build:
-  dockerBuildPath: ../..
+  dockerBuildPath: .
 startCommand:
   type: stdio
   configSchema:
@@ -15,13 +15,13 @@ startCommand:
         description: Number of items per page for paginated responses
       ULTRADE_API_URL:
         type: string
-        default: https://api.testnet.ultrade.org
+        default: https://api.ultrade.org
         description: Ultrade API base URL
       
   exampleConfig:
     
     ITEMS_PER_PAGE: 10
-    ULTRADE_API_URL: https://api.testnet.ultrade.org
+    ULTRADE_API_URL: https://api.ultrade.org
     
   commandFunction:
     |-
