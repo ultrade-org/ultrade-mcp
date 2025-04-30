@@ -5,6 +5,7 @@ WORKDIR /app
 # Copy package files first
 COPY package*.json ./
 COPY tsconfig.json ./
+RUN npm install
 # Copy source files
 COPY . .
 # Install dependencies at root level first
