@@ -9,7 +9,7 @@ RUN npm install
 # Copy source files
 COPY . .
 # Install dependencies at root level first
-RUN npm install && npm run build
+RUN npm run build
 
 
 
